@@ -1,0 +1,265 @@
+
+#navbar::before{
+    content:"" ;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+ 
+    }
+    #navbar{
+        /* border: 2px red solid; */
+        flex-direction: row;
+    
+    }
+    #logo{
+        margin: 0px 0px;
+        /* border: 2px red solid; */
+
+    }
+    #home::before{
+        content:"" ;
+        background:url(../bg1.jpg )no-repeat center center/cover ;
+        position: absolute;
+        width: 100% ;
+        height:570px;
+        z-index: -1;
+        opacity: 0.89;
+     
+    }
+#dance::before{
+   content:"" ;
+     background: url(../bg1.jpg)no-repeat center center/cover ;
+   position: absolute;
+   width: 100%;
+   height: 3000px;
+   z-index: -1;
+   opacity: 0.4;
+   
+   
+}
+#abouts::before{
+    content:"" ;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 3500px;
+    z-index: -1;
+    opacity: 0.4;
+    flex-direction: row-reverse;
+   
+}
+#mountain::before{
+    content:"" ;
+    /* background-color: rgb(0, 0, 0); */   background: url(../bg2.jpg)no-repeat center center/cover ;
+    position: absolute;
+    width: 100%;
+    height: 650%;
+    z-index: -1;
+    opacity: 0.89;
+    
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 0.8rem;
+    display: flex;
+    
+}
+#navbar ul li a{
+   display: block;
+   border-radius: 20px;
+    padding: 0px 5px;
+    text-decoration: none;
+    color: aliceblue;
+    font-family: "Baloo 2", sans-serif;
+}
+#navbar ul li a:hover{
+    list-style: none;
+    font-size: 0.9rem;
+    padding: 6px;
+    /* color: rgb(0, 0, 0);
+    background-color: antiquewhite;
+    font-family: "Baloo 2", sans-serif; */
+}
+#home h3{
+    color: rgb(232, 224, 236);
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: "Baloo 2", sans-serif;
+}
+/* utility classes */
+.h-primary{
+    font-size: 1.6rem;
+    padding: 0px 0px;
+}
+
+
+.temple header {
+    border: 3px rgb(243, 233, 233) solid;
+    width: 100%;
+    padding: 1px 0px;
+    border-radius: 24px;
+    color: rgb(82, 27, 59);
+    background-color: rgba(236, 211, 211, 0.507);
+    position: relative;
+    top: 30px;
+    left: 0px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    font-family: "Baloo 2", sans-serif;
+    margin:2px 10px ;
+}
+#abouts img{
+    width: 200px;
+    height: 180px;
+    border: 3px rgb(235, 229, 229) solid;
+    position: relative;
+    display: flex;
+    border-radius: 25px;
+    left: 0px;
+    top: 20px;
+
+}
+#abouts{
+    height: 3500px;
+}
+
+p{
+    font-size: 0.8rem;
+}
+#logo img{
+    width: 2.3rem;
+  
+}
+.dance header{
+    border: 3px rgb(243, 233, 233) solid;
+    width: 100%;
+    padding: 1px 0px;
+    border-radius: 24px;
+    color: rgb(82, 27, 59);
+    background-color: rgba(236, 211, 211, 0.507);
+    position: relative;
+    top: 40px;
+    left: 0px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    font-family: "Baloo 2", sans-serif;
+    flex-wrap: wrap-reverse;
+    margin: 2px 10px;
+    
+}
+#dance{
+    height: 3000px;
+}
+#dance img{
+    width: 200px;
+    height: 180px;
+    border: 3px rgb(235, 229, 229) solid;
+    position: relative;
+    display: flex;
+    border-radius: 25px;
+    left: 30px;
+    top: 40px;
+}
+.mountain header{
+    border: 3px rgb(243, 233, 233) solid;
+    width: 100%;
+    padding: 1px 0px;
+    border-radius: 24px;
+    color: rgb(82, 27, 59);
+    background-color: rgba(236, 211, 211, 0.507);
+    position: relative;
+    top: 30px;
+    left: 0px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    font-family: "Baloo 2", sans-serif;
+    margin: 2px 10px;
+}
+#mountain img{
+    
+    width: 200px;
+    height: 180px;
+    border: 3px rgb(235, 229, 229) solid;
+    position: relative;
+    display: flex;
+    border-radius: 25px;
+    left: 20px;
+    top: 30px;
+}
+#home{
+    padding: 0px 0px;
+    height: 570px;
+   
+}
+.bub {
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    box-shadow: inset 5px -5px 10px white;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .01);
+    backdrop-filter: blur(0px);
+    position: absolute;
+    bottom: 0%;
+    /* animation: bubble 3s ease-in infinite; */
+}
+
+.bub::before {
+    position: absolute;
+    content: "";
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 25px;
+    right: 23px;
+    box-shadow: 0px 0px 20px white;
+    z-index: -1;
+}
+.heading,
+.m1,
+.d1{
+    font-size: 1.2rem;
+    width: 100%;
+
+    top: 20px;
+    left: 0px;
+    border-radius:0px ;
+
+
+}
+.mores header {
+    border: 3px rgb(243, 233, 233) solid;
+    width: 100%;
+    padding: 1px 0px;
+    border-radius: 24px;
+    color: rgb(82, 27, 59);
+    background-color: rgba(236, 211, 211, 0.507);
+    position: relative;
+    top: 30px;
+    left: -11px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    font-family: "Baloo 2", sans-serif;
+    margin:2px 10px ;
+}
+#more img{
+    width: 200px;
+    height: 180px;
+    border: 3px rgb(235, 229, 229) solid;
+    position: relative;
+    display: flex;
+    border-radius: 25px;
+    left: 0px;
+    top: 20px;
+
+}
